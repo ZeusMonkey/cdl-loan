@@ -1,0 +1,17 @@
+- The ability to place a collateral in stablecoins including DAI, TUSD, tether and USDC.
+- Get a loan based on that collateral requiring a 130% collateral for each loan.
+- For example, to get a 100 DAI loan, you need an 130 DAI or tether or others collateral (in USD value)
+- Each loan has an interest rate depending on time. From 1 day to 1 month it goes from 2% to 10%.
+- The collateral required goes down since 50% of the interest rate collected is locked in a contract
+and is named the "Crypto Score" which is used as collateral.
+- The crypto score is variable over time and must be monitored to avoid losing funds.
+- For instance, user gets a 1 month loan of 20,000 USDC having a collateral of 26,000 DAI. 
+He repays the loan with a total of 22,000 USDC including interest. Half of it, 1,000 USDC goes to his
+crypto score where it stays forever locked.
+- Now he can make a loan of 10,000 USDC with a collateral of 12,000 USDC instead of the usual 13,000 USDC
+since he has a crypto score worth 1,000 USDC.
+- The more repayments are made and the larger the quantities repaid, the better crypto score the user will have
+reaching even a 0% collateral required since the crypto score will be handling all the risk.
+- There's always a 140% collateral whether that's in crypto score or manual collateral. When a loan is recalled
+for late payment, 80% of 140% of that collateral (112% of the original loan amount) goes to LPs to return their 
+funds with a profit, 5% to the dev treasury, 15% to loan recallers to incivize them to recall loans.
